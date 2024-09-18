@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <!-- 
+  ^~^  ,
+ ('Y') )
+ /   \/ 
+(\|||/) Made by GustavG
+-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caixa Eletrônico</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <!-- Corpo -->
+  <body class="bg-dark text-light text-center">
+    <div class="container mt-5">
+      <header id="inicio">
+        <p id="mensagemBoasVindas" class="text-center"></p>
+        <section id="escolhas" style="display: none">
+          <div class="card-body">
+            <div class="form-group">
+              <label for="opcao">Selecione uma opção:</label>
+              <select class="form-control" id="opcao">
+                <option value="6">Selecione...</option>
+                <option value="1">Ver Saldo</option>
+                <option value="2">Ver Extrato</option>
+                <option value="3">Fazer Saque</option>
+                <option value="4">Fazer Depósito</option>
+                <option value="5">Fazer Transferência</option>
+                <option value="0">Sair</option>
+              </select>
+              <div id="resultado"></div>
+
+              <button
+                id="btnOperacao"
+                class="btn btn-secondary mt-2"
+                style="display: none"
+              >
+                Confirmar Operação
+              </button>
+            </div>
+          </div>
+        </section>
+      </header>
+    </div>
+
+    <!-- Ínicio do JS -->
+    <script src="logica.js"></script>
+  </body>
+</html>
